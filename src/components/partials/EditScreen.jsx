@@ -4,8 +4,13 @@ import { API_URL } from "../store/store";
 import "../../css/animations.css";
 import axios from "axios";
 import { getTodos } from "../pages/Home";
+import { createSignal } from "solid-js";
 
 const EditScreen = ({ todo, setEditing }) => {
+
+  const [title, setTitle] = createSignal(todo.title);
+  const [description, setDescription] = createSignal(todo.description);
+
   return (
     <div class="">
       <button onClick={() => setEditing(false)}>
