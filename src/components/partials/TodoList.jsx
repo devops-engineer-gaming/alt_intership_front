@@ -19,6 +19,7 @@ const AddTodo = async () => {await
 
 const TodoList = (props) => {
     return (
+        <div>
         <main class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-12 mb-12">
             <For each={props.todos}>
                 {(todo) => 
@@ -26,8 +27,9 @@ const TodoList = (props) => {
                     <Todo todo={todo} />
                 </>}
             </For>
-            <button class="p-4 rounded-md bg-lime-100" onClick={AddTodo}>Add todo</button>
         </main>
+        <button class="p-4 rounded-md bg-lime-100" onClick={AddTodo}>Add todo</button>
+        </div>            
     );
 }
 

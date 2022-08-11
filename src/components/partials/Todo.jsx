@@ -12,7 +12,7 @@ const Todo = ({todo}) => {
     const [editing, setEditing] = createSignal(false);
 
     return (
-        <div class="w-full p-4 flex flex-col rounded-xl bg-lime-200 font-sans showing">
+        <div class="w-full p-4 flex flex-col rounded-xl bg-lime-200 font-sans showing relative">
             <Show when={!editing()} fallback={<EditScreen todo={todo} 
             setEditing={setEditing}/>}>
                 <div class="w-full flex flex-row">
@@ -27,7 +27,7 @@ const Todo = ({todo}) => {
                     </button>    
                 </div>
                 <h1 class="text-3xl font-semibold">{todo.title}</h1>
-                <p class="text-xl">{todo.description}</p>
+                <p class="text-xl break-all">{todo.description}</p>
             </Show>
             
         </div>
