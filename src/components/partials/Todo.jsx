@@ -19,7 +19,7 @@ const Todo = ({todo}) => {
                     <button onClick={() => setEditing(true)}>
                         <Icon class="w-6" path={pencil}/>
                     </button>
-                    <button onClick={async () => {await axios.delete(API_URL+'/todos/'+todo.id)
+                    <button onClick={async () => {await axios.delete('/api/todos/'+todo.id)
                     .then((response) => console.log(response))
                     .catch((error) => console.log(error));
                     getTodos();}}>

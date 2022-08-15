@@ -7,11 +7,7 @@ export const getTodos = async () => (await
     axios(
         {
             method: "GET",
-            url: "http://127.0.0.1:8000/todos",
-            headers: {
-                'Access-Control-Allow-Origin': '*',
-                'Content-Type': 'application/json',
-              },
+            url: "/api/todos",
         }
     ).then(
         (response) => {

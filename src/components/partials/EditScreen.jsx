@@ -48,7 +48,7 @@ const EditScreen = ({ todo, setEditing }) => {
           class="duration-300 bg-lime-500 font-bold text-white py-2 px-6 rounded-md
                     hover:scale-110 hover:bg-lime-600"
           type="button" onClick={async () => {
-            await axios.patch(API_URL+'/todos/'+todo.id, {
+            await axios.patch('/api/todos/'+todo.id, {
               title: document.forms["form"+String(todo.id)]['title'].value ,
               description: document.forms["form"+String(todo.id)]['description'].value 
             }).then(function (response) {

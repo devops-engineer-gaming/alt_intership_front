@@ -5,7 +5,7 @@ import { getTodos } from "../pages/Home";
 import { API_URL } from "../store/store";
 
 const AddTodo = async () => {await
-    axios.post(API_URL+'/todos/', {
+    axios.post('/api/todos/', {
         title: 'empty',
         description: 'empty'
       })
