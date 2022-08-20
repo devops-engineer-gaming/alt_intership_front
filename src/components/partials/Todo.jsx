@@ -3,7 +3,7 @@ import { pencil, trash,  } from "solid-heroicons/solid"
 import { createSignal, from, Show } from "solid-js";
 import EditScreen from "./EditScreen";
 import '../../css/animations.css';
-import { setTodolist, todolist , API_URL} from "../store/store";
+import { setTodolist, todolist} from "../store/store";
 import axios from "axios";
 import { getTodos } from "../pages/Home";
 

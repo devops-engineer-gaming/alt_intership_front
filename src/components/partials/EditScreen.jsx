@@ -1,6 +1,5 @@
 import { xCircle } from "solid-heroicons/solid";
 import { Icon } from "solid-heroicons";
-import { API_URL } from "../store/store";
 import "../../css/animations.css";
 import axios from "axios";
 import { getTodos } from "../pages/Home";

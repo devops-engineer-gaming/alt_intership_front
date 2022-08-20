@@ -2,7 +2,6 @@ import { For } from "solid-js"
 import Todo from "./Todo";
 import axios from "axios";
 import { getTodos } from "../pages/Home";
-import { API_URL } from "../store/store";
 
 const AddTodo = async () => {await
     axios.post('/api/todos/', {
